@@ -189,8 +189,17 @@ Two that the blueprint sets for you, and why they matter:
 
 ### Step 4 — The Firebase key, if you did section 1
 
-**Service → Settings → Secret Files → Add**, filename `fcm.json`, contents pasted from the
-downloaded JSON. `FCM_SERVICE_ACCOUNT_PATH` already points at `/etc/secrets/fcm.json`.
+**The blueprint will not ask you for this.** Blueprints can only prompt for environment variables,
+and the Firebase key is a *secret file* — a multi-line JSON document that env vars would mangle.
+`FCM_SERVICE_ACCOUNT_PATH` is fixed in [`render.yaml`](render.yaml), so there is nothing to prompt
+for; the file is uploaded by hand once the service exists.
+
+**Service → Environment → Secret Files → Add Secret File**, filename `fcm.json`, contents pasted
+from the downloaded JSON. It is mounted at `/etc/secrets/fcm.json`, where the blueprint already
+points.
+
+Deploying before uploading it is safe: push failures are caught and logged
+(`notification.service.js`), so the API keeps working and only push is missing.
 
 ### Step 5 — Create the first admin
 
