@@ -1,0 +1,9 @@
+arb-dir: lib/app/localization
+template-arb-file: app_en.arb
+output-dir: lib/app/localization/generated
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+nullable-getter: false
+# Volunteer/Admin strings may stay English in hi/mr for V1 (P-19); they fall
+# back to the English template and are listed here for translators.
+untranslated-messages-file: l10n_untranslated.json

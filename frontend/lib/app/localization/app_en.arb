@@ -1,0 +1,611 @@
+{
+  "@@locale": "en",
+  "appName": "MedAID",
+  "appTagline": "Emergency health help for large gatherings",
+  "commonLoading": "Loading…",
+  "commonRetry": "Try again",
+  "commonCancel": "Cancel",
+  "commonConfirm": "Confirm",
+  "commonSave": "Save",
+  "commonContinue": "Continue",
+  "commonClose": "Close",
+  "commonBack": "Back",
+  "commonOk": "OK",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "commonSubmit": "Submit",
+  "commonEdit": "Edit",
+  "commonDelete": "Delete",
+  "commonSearch": "Search",
+  "commonViewAll": "View all",
+  "commonDetails": "Details",
+  "commonRefresh": "Refresh",
+  "commonNotAvailable": "Not available",
+  "languageTitle": "Language",
+  "languageSubtitle": "Choose the language for the app",
+  "languageEnglish": "English",
+  "languageHindi": "हिन्दी",
+  "languageMarathi": "मराठी",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorNetwork": "No internet connection. Check your network and try again.",
+  "errorTimeout": "The server is taking too long to respond. Please try again.",
+  "errorAuthInvalid": "Incorrect email/username or password.",
+  "errorUnauthorized": "Your session has ended. Please log in again.",
+  "errorForbidden": "You do not have permission to do this.",
+  "errorAccountSuspended": "This account is suspended. Please contact the administrator.",
+  "errorValidation": "Please check the highlighted details.",
+  "errorNotFound": "We couldn't find what you were looking for.",
+  "errorConflict": "This action conflicts with the latest status. Please refresh.",
+  "errorRateLimited": "Too many attempts. Please wait a moment and try again.",
+  "errorVolunteerNotVerified": "Your volunteer verification is not approved yet.",
+  "errorVolunteerNotAvailable": "You are not available for emergencies right now.",
+  "errorEmergencyAlreadyAssigned": "This emergency has already been handled by someone else.",
+  "errorAssignmentExpired": "This assignment has expired.",
+  "errorLocationUnavailable": "Your location is unavailable. Turn on location services and try again.",
+  "errorRoutingUnavailable": "Route information is unavailable right now.",
+  "errorFileUploadFailed": "The file could not be uploaded. Please try again.",
+  "errorInternal": "A server error occurred. Please try again shortly.",
+  "authLoginTitle": "Welcome back",
+  "authLoginSubtitle": "Log in to get help quickly when you need it.",
+  "authIdentifierLabel": "Email or username",
+  "authPasswordLabel": "Password",
+  "authLoginButton": "Log in",
+  "authNoAccount": "New to MedAID?",
+  "authCreateAccountLink": "Create an account",
+  "authStaffNote": "Volunteers and admins: use the account created for you.",
+  "authRegisterTitle": "Create your account",
+  "authRegisterSubtitle": "It takes less than a minute.",
+  "authNameLabel": "Full name",
+  "authEmailLabel": "Email",
+  "authUsernameLabel": "Username",
+  "authPhoneLabel": "Phone number (optional)",
+  "authConfirmPasswordLabel": "Confirm password",
+  "authRegisterButton": "Create account",
+  "authHaveAccount": "Already have an account?",
+  "authLoginLink": "Log in",
+  "authShowPassword": "Show password",
+  "authHidePassword": "Hide password",
+  "authLogout": "Log out",
+  "authLogoutConfirmTitle": "Log out?",
+  "authLogoutConfirmMessage": "You will need to log in again to use MedAID.",
+  "authChangePasswordTitle": "Set a new password",
+  "authChangePasswordSubtitle": "For your security, choose a new password before continuing.",
+  "authCurrentPasswordLabel": "Current password",
+  "authNewPasswordLabel": "New password",
+  "authChangePasswordButton": "Update password",
+  "authPasswordChanged": "Your password has been updated.",
+  "authAccountCreated": "Welcome to MedAID!",
+  "validationRequired": "This field is required.",
+  "validationEmail": "Enter a valid email address.",
+  "validationUsername": "Use 3–30 letters, numbers, dots or underscores.",
+  "validationPassword": "Use at least 8 characters, including letters and numbers.",
+  "validationPasswordMismatch": "Passwords do not match.",
+  "validationPasswordSame": "The new password must be different.",
+  "validationPhone": "Enter a valid phone number.",
+  "validationName": "Enter your full name.",
+  "errorPasswordChangeRequired": "Please set a new password to continue.",
+  "homeGreeting": "Hello, {name}",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "commonClear": "Clear",
+  "commonAllow": "Allow",
+  "commonOpenSettings": "Open settings",
+  "commonUpload": "Upload",
+  "commonReplace": "Replace",
+  "authAccountExists": "This email or username is already in use.",
+  "navHome": "Home",
+  "navFacilities": "Nearby",
+  "navEmergencies": "Alerts",
+  "navProfile": "Profile",
+  "commonCallEmergency": "Call 112",
+  "commonNotSet": "Not set",
+  "homeSubtitle": "Help is one button away.",
+  "sosLabel": "SOS",
+  "sosHoldHint": "Hold for help",
+  "sosSemanticLabel": "Send an emergency alert",
+  "sosCardTitle": "In an emergency?",
+  "sosCardBody": "Press and hold the button. We will share your location with the nearest volunteer.",
+  "homeActiveAlertTitle": "You have an active alert",
+  "homeActiveAlertAction": "View status",
+  "homeQuickActions": "What do you need?",
+  "homeSymptomsTitle": "Check symptoms",
+  "homeSymptomsSubtitle": "Get general guidance",
+  "homeFacilitiesTitle": "Hospitals & camps",
+  "homeFacilitiesSubtitle": "Find help near you",
+  "homeHistoryTitle": "My alerts",
+  "homeHistorySubtitle": "Status and history",
+  "sosSendingTitle": "Sending your alert",
+  "sosStepLocating": "Getting your location…",
+  "sosStepSending": "Alerting volunteers…",
+  "sosFailedTitle": "Alert not sent",
+  "sosFailedMessage": "We could not send your alert. Try again, or call 112 now.",
+  "sosNoLocationWarning": "We could not get your location, so the control room has been alerted. If you can, call 112.",
+  "emergencyStatusCreated": "Alert sent",
+  "emergencyStatusAssigning": "Finding a volunteer",
+  "emergencyStatusAssigned": "Contacting a volunteer",
+  "emergencyStatusAccepted": "Help is on the way",
+  "emergencyStatusInProgress": "Responder with you",
+  "emergencyStatusResolved": "Resolved",
+  "emergencyStatusCancelled": "Cancelled",
+  "emergencyStatusExpired": "Closed",
+  "emergencyStatusUnassigned": "Waiting for a volunteer",
+  "emergencyReasonNoLocation": "No location was available",
+  "emergencyReasonNoVolunteer": "No volunteer available nearby",
+  "emergencyReasonCandidatesBusy": "Nearby volunteers were busy",
+  "emergencyReasonVolunteerUnavailable": "The volunteer became unavailable",
+  "emergencyReasonTimeout": "No answer in time",
+  "emergencyReasonDeclined": "The volunteer could not come",
+  "emergencyReasonAdminReassigned": "Reassigned by the control room",
+  "emergencyMessageSearching": "We are finding the nearest available volunteer. Stay where you are if it is safe.",
+  "emergencyMessageAccepted": "{name} accepted your alert and is coming to you.",
+  "@emergencyMessageAccepted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "emergencyMessageAcceptedNoName": "A volunteer accepted your alert and is coming to you.",
+  "emergencyMessageInProgress": "Your responder has reached you.",
+  "emergencyMessageUnassigned": "No volunteer is free right now. The control room has been alerted and we keep trying. If you can, call 112.",
+  "emergencyMessageResolved": "This alert has been resolved. We hope you are feeling better.",
+  "emergencyMessageCancelled": "This alert was cancelled.",
+  "emergencyEta": "About {minutes} min away",
+  "@emergencyEta": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "emergencyDetailTitle": "Emergency alert",
+  "emergencyTimelineTitle": "Timeline",
+  "emergencyYourLocation": "Your shared location",
+  "emergencyNoLocation": "Location not shared",
+  "emergencyCancelAction": "Cancel alert",
+  "emergencyCancelConfirmTitle": "Cancel this alert?",
+  "emergencyCancelConfirmMessage": "Only cancel if you no longer need help. A volunteer on the way will be told to stop.",
+  "emergencyKeepAlert": "Keep alert",
+  "emergencyCancelled": "Your alert was cancelled.",
+  "emergencyHistoryEmptyTitle": "No alerts yet",
+  "emergencyHistoryEmptyMessage": "Alerts you send will appear here.",
+  "emergencyLiveUpdates": "Updates automatically",
+  "timeJustNow": "Just now",
+  "timeMinutesAgo": "{count} min ago",
+  "@timeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeHoursAgo": "{count} h ago",
+  "@timeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "distanceMeters": "{meters} m",
+  "@distanceMeters": {
+    "placeholders": {
+      "meters": {
+        "type": "String"
+      }
+    }
+  },
+  "distanceKilometers": "{km} km",
+  "@distanceKilometers": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomsTitle": "Symptom checker",
+  "symptomsSubtitle": "Select everything you are experiencing.",
+  "symptomsSearchHint": "Search symptoms",
+  "symptomsAboutYou": "About the person",
+  "symptomsAgeYoungChild": "Under 5",
+  "symptomsAgeChild": "5–17 years",
+  "symptomsAgeAdult": "18–64 years",
+  "symptomsAgeOlder": "65 or older",
+  "symptomsPregnant": "Pregnant",
+  "symptomsDurationLabel": "How long?",
+  "symptomsDurationToday": "Today",
+  "symptomsDurationFewDays": "1–2 days",
+  "symptomsDurationLonger": "3+ days",
+  "symptomsCheckButton": "Get guidance",
+  "symptomsSelectedCount": "{count} selected",
+  "@symptomsSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "symptomsEmergencyShortcut": "Severe symptoms? Don't wait — use SOS.",
+  "symptomsNoMatch": "No symptoms match your search.",
+  "symptomsResultTitle": "Your guidance",
+  "symptomsWhatToDo": "What to do now",
+  "symptomsWarningSignsTitle": "Use SOS right away if you notice",
+  "symptomsSelectedTitle": "Symptoms you selected",
+  "symptomsFindFacility": "Find nearest hospital or camp",
+  "symptomsUseSos": "Send SOS alert",
+  "symptomsStartOver": "Check again",
+  "triageEmergency": "Emergency",
+  "triageUrgent": "Urgent",
+  "triageRoutine": "Not urgent",
+  "facilitiesTitle": "Nearby help",
+  "facilitiesSubtitle": "Hospitals and medical camps near you",
+  "facilitiesFilterAll": "All",
+  "facilitiesFilterHospitals": "Hospitals",
+  "facilitiesFilterCamps": "Medical camps",
+  "facilitiesViewList": "List",
+  "facilitiesViewMap": "Map",
+  "facilityTypeHospital": "Hospital",
+  "facilityTypeCamp": "Medical camp",
+  "facilityEmergencyDept": "Emergency care",
+  "facilityOpenUntil": "Open until {time}",
+  "@facilityOpenUntil": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "facilitiesEmptyTitle": "Nothing found nearby",
+  "facilitiesEmptyMessage": "Try another filter, or use SOS if you need urgent help.",
+  "facilityServicesTitle": "Services",
+  "facilityAddressTitle": "Address",
+  "facilityContactTitle": "Contact",
+  "facilityCall": "Call",
+  "facilityDirections": "Directions",
+  "facilityValidityTitle": "Open hours",
+  "facilityAbout": "About",
+  "locationPermissionTitle": "Allow location access",
+  "locationPermissionMessage": "MedAID uses your location to show help nearby and to guide volunteers to you in an emergency.",
+  "locationServicesOffTitle": "Turn on location",
+  "locationServicesOffMessage": "Location services are off on this phone.",
+  "profileTitle": "Profile",
+  "profilePersonalDetails": "Personal details",
+  "profileMedicalInfo": "Medical information",
+  "profileMedicalInfoSubtitle": "Shared with responders only if you allow it",
+  "profileEditTitle": "Edit details",
+  "profileSaved": "Your changes were saved.",
+  "profileChangePassword": "Change password",
+  "medicalDob": "Date of birth",
+  "medicalGender": "Gender",
+  "genderMale": "Male",
+  "genderFemale": "Female",
+  "genderOther": "Other",
+  "genderPreferNotToSay": "Prefer not to say",
+  "medicalBloodGroup": "Blood group",
+  "bloodGroupUnknown": "Don't know",
+  "medicalAllergies": "Allergies",
+  "medicalConditions": "Existing medical conditions",
+  "medicalEmergencyContactName": "Emergency contact name",
+  "medicalEmergencyContactPhone": "Emergency contact phone",
+  "medicalShareConsent": "Share this information with the volunteer who responds to my alert",
+  "medicalShareConsentHelp": "Only the assigned volunteer and administrators can see it, and only during an alert.",
+  "medicalOptionalNote": "All fields are optional.",
+  "errorFileTooLarge": "This file is larger than 5 MB. Please choose a smaller file.",
+  "navDashboard": "Dashboard",
+  "verificationNotSubmitted": "Not submitted",
+  "verificationPending": "Under review",
+  "verificationApproved": "Verified",
+  "verificationRejected": "Not approved",
+  "volunteerStatusActive": "Active",
+  "volunteerStatusOffline": "Offline",
+  "volunteerStatusBusy": "Busy",
+  "documentTypeIdProof": "ID proof",
+  "documentTypeFirstAid": "First-aid certificate",
+  "documentTypeOther": "Other document",
+  "documentStatusPending": "Under review",
+  "documentStatusApproved": "Approved",
+  "documentStatusRejected": "Rejected",
+  "assignmentPending": "Awaiting your response",
+  "assignmentAccepted": "Accepted",
+  "assignmentDeclined": "Declined",
+  "assignmentExpired": "Expired",
+  "assignmentCancelled": "Cancelled",
+  "assignmentCompleted": "Completed",
+  "volunteerDashboardSubtitle": "Thank you for helping keep people safe.",
+  "volunteerOnboardingTitle": "Finish setting up",
+  "volunteerOnboardingSubtitle": "Complete these steps to start receiving emergencies.",
+  "volunteerStepProfile": "Complete your profile",
+  "volunteerStepDocuments": "Upload verification documents",
+  "volunteerStepVerification": "Admin approval",
+  "volunteerAvailabilityTitle": "Availability",
+  "volunteerAvailabilityActiveMessage": "You will receive nearby emergencies.",
+  "volunteerAvailabilityOfflineMessage": "Go active to receive emergencies.",
+  "volunteerAvailabilityBusyMessage": "Resolve your current emergency to receive new ones.",
+  "volunteerAvailabilitySwitch": "Available for emergencies",
+  "volunteerCurrentAssignment": "Current emergency",
+  "volunteerNoAssignmentTitle": "No emergencies right now",
+  "volunteerNoAssignmentMessage": "Stay active. New emergencies near you will appear here.",
+  "volunteerRespondWithin": "Respond within {time}",
+  "@volunteerRespondWithin": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "volunteerEmergenciesTitle": "Emergencies",
+  "volunteerActiveTab": "Active",
+  "volunteerHistoryTab": "History",
+  "volunteerHistoryEmpty": "Emergencies you respond to will appear here.",
+  "volunteerEmergencyTitle": "Emergency",
+  "volunteerReporterTitle": "Person in need",
+  "volunteerCallReporter": "Call",
+  "volunteerMedicalInfoTitle": "Shared medical information",
+  "volunteerNoMedicalInfo": "No medical information shared.",
+  "volunteerLocationTitle": "Emergency location",
+  "volunteerNoLocation": "The person could not share a location. Call them or contact the control room.",
+  "volunteerAccept": "Accept emergency",
+  "volunteerDecline": "Decline",
+  "volunteerDeclineConfirmTitle": "Decline this emergency?",
+  "volunteerDeclineConfirmMessage": "It will be sent to the next available volunteer.",
+  "volunteerStartAssistance": "I have arrived",
+  "volunteerResolve": "Mark as resolved",
+  "volunteerResolveTitle": "Resolve emergency",
+  "volunteerResolveNoteLabel": "What help was given?",
+  "volunteerResolveNoteHint": "e.g. First aid given, escorted to the medical camp",
+  "volunteerResolved": "Emergency resolved. You are active again.",
+  "volunteerAccepted": "Accepted. The person has been told help is coming.",
+  "volunteerExpiredMessage": "This assignment expired and was passed to another volunteer.",
+  "volunteerClosedMessage": "This emergency is closed.",
+  "volunteerDirections": "Directions",
+  "volunteerRouteEta": "{minutes} min · {distance}",
+  "@volunteerRouteEta": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "distance": {
+        "type": "String"
+      }
+    }
+  },
+  "volunteerRouteEstimated": "Estimated from straight-line distance. The walking route may be longer.",
+  "volunteerRouteUnavailable": "Route unavailable right now. Use Directions to navigate.",
+  "trackingNotificationTitle": "MedAID is sharing your location",
+  "trackingNotificationText": "Used to send you nearby emergencies. Go offline to stop.",
+  "trackingStarting": "Starting live location…",
+  "trackingActive": "Sharing live location · {time}",
+  "@trackingActive": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "trackingOffTitle": "Location sharing is off",
+  "trackingPermissionMessage": "Allow location access, or you will stop receiving nearby emergencies within a few minutes.",
+  "trackingServicesOffMessage": "Turn on location services, or you will stop receiving nearby emergencies within a few minutes.",
+  "volunteerResolutionTitle": "Resolution",
+  "profileCompleteTitle": "Your details",
+  "profileCompleteSubtitle": "Admins use these details to verify you.",
+  "volunteerAddress": "Address",
+  "volunteerCity": "City",
+  "volunteerPhone": "Phone number",
+  "volunteerSkills": "Skills (comma separated)",
+  "volunteerLanguages": "Languages you speak (comma separated)",
+  "documentsTitle": "Verification documents",
+  "documentsSubtitle": "Upload a clear photo or PDF of each document. Maximum 5 MB.",
+  "documentUploaded": "Document uploaded.",
+  "documentsSubmitted": "Documents submitted for review.",
+  "verificationTitle": "Verification",
+  "verificationPendingMessage": "An administrator is reviewing your documents. You will be notified when it's done.",
+  "verificationApprovedMessage": "You are verified. Go active from the dashboard to start receiving emergencies.",
+  "verificationRejectedMessage": "Your verification was not approved. Please update your documents.",
+  "verificationNotSubmittedMessage": "Complete your profile and upload the required documents.",
+  "verificationReasonLabel": "Reason",
+  "verificationUpdateDocuments": "Update documents",
+  "volunteerProfileDocuments": "Documents",
+  "navVolunteers": "Volunteers",
+  "navCamps": "Camps",
+  "navMore": "More",
+  "adminDashboardTitle": "Control room",
+  "adminDashboardSubtitle": "Live overview of emergencies and volunteers",
+  "adminStatOpen": "Open emergencies",
+  "adminStatUnassigned": "Waiting for a volunteer",
+  "adminStatAwaiting": "Awaiting acceptance",
+  "adminStatInProgress": "Help on the way",
+  "adminStatToday": "Alerts today",
+  "adminStatPendingVerification": "Pending verifications",
+  "adminStatActiveVolunteers": "Active volunteers",
+  "adminStatBusyVolunteers": "Busy volunteers",
+  "adminStatActiveCamps": "Camps open now",
+  "adminRecentOpen": "Open emergencies",
+  "adminNoOpenEmergencies": "No open emergencies right now.",
+  "adminFilterOpen": "Open",
+  "adminFilterAll": "All",
+  "adminFilterUnassigned": "Unassigned",
+  "adminFilterResolved": "Resolved",
+  "adminSearchAlert": "Search alert number",
+  "adminEmergenciesEmpty": "No emergencies match this filter.",
+  "adminReporter": "Reported by",
+  "adminAssignedVolunteer": "Assigned volunteer",
+  "adminNotAssigned": "No volunteer assigned",
+  "adminAttempts": "Attempts: {count}",
+  "@adminAttempts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminAssignmentHistory": "Assignment history",
+  "adminNoAssignments": "No dispatch attempts yet.",
+  "adminReassign": "Find another volunteer",
+  "adminReassignTo": "Assign to a volunteer",
+  "adminReassignConfirmTitle": "Reassign this emergency?",
+  "adminReassignConfirmMessage": "The current volunteer will be released and the emergency dispatched again.",
+  "adminReassigned": "Emergency sent for reassignment.",
+  "adminResolve": "Resolve",
+  "adminCancelEmergency": "Cancel emergency",
+  "adminCloseNoteLabel": "Note (required)",
+  "adminClosed": "Emergency closed.",
+  "adminPickVolunteer": "Choose a volunteer",
+  "adminNoEligibleVolunteers": "No active, verified volunteers are available.",
+  "adminVolunteersTitle": "Volunteers",
+  "adminVolunteersEmpty": "No volunteers match this filter.",
+  "adminSearchVolunteers": "Search by name, email or username",
+  "adminFilterPendingVerification": "Pending review",
+  "adminCreateVolunteer": "Add volunteer",
+  "adminCreateVolunteerSubtitle": "The volunteer signs in with a temporary password and must change it.",
+  "adminVolunteerCreatedTitle": "Volunteer created",
+  "adminTemporaryPasswordMessage": "Share this temporary password with {name} in person. It will not be shown again.",
+  "@adminTemporaryPasswordMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "adminCopy": "Copy",
+  "adminCopied": "Copied to clipboard.",
+  "adminVolunteerDetails": "Volunteer",
+  "adminProfileSection": "Profile",
+  "adminDocumentsSection": "Documents",
+  "adminNoDocuments": "No documents uploaded yet.",
+  "adminViewDocument": "View",
+  "adminApprove": "Approve",
+  "adminReject": "Reject",
+  "adminRejectReasonLabel": "Reason for rejection",
+  "adminApproved": "Volunteer approved.",
+  "adminRejected": "Volunteer rejected.",
+  "adminSuspend": "Suspend account",
+  "adminReactivate": "Reactivate account",
+  "adminSuspendConfirmTitle": "Suspend this account?",
+  "adminSuspendConfirmMessage": "They will be signed out immediately. Any emergency they hold will be reassigned.",
+  "adminSuspended": "Suspended",
+  "adminAccountUpdated": "Account updated.",
+  "adminLastLocation": "Last location update",
+  "adminTrackingTitle": "Volunteer tracking",
+  "adminTrackingSubtitle": "Active and busy volunteers",
+  "adminTrackingEmpty": "No volunteers are sharing a location right now.",
+  "adminTrackingAvailable": "{count} available",
+  "@adminTrackingAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminTrackingResponding": "{count} responding",
+  "@adminTrackingResponding": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminTrackingStale": "{count} location out of date",
+  "@adminTrackingStale": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminCampsTitle": "Medical camps",
+  "adminCampsEmpty": "No camps match this filter.",
+  "adminCreateCamp": "Add camp",
+  "adminEditCamp": "Edit camp",
+  "adminCampName": "Camp name",
+  "adminCampDescription": "Description",
+  "adminCampAddress": "Address",
+  "adminCampServices": "Services (comma separated)",
+  "adminCampContactName": "Contact person",
+  "adminCampContactPhone": "Contact phone",
+  "adminCampStart": "Opens",
+  "adminCampEnd": "Closes",
+  "adminCampActive": "Active",
+  "adminCampLocation": "Location",
+  "adminCampLocationHint": "Tap the map to place the camp.",
+  "adminCampUseMyLocation": "Use my location",
+  "adminCampLocationRequired": "Choose the camp location on the map.",
+  "adminCampEndBeforeStart": "The closing time must be after the opening time.",
+  "adminCampSaved": "Camp saved.",
+  "adminCampDelete": "Delete camp",
+  "adminCampDeleteConfirm": "Users will no longer see this camp.",
+  "adminCampDeleted": "Camp deleted.",
+  "campLifecycleActiveNow": "Open now",
+  "campLifecycleUpcoming": "Upcoming",
+  "campLifecycleExpired": "Ended",
+  "campLifecycleInactive": "Inactive",
+  "adminUsersTitle": "Users",
+  "adminUsersEmpty": "No users match this filter.",
+  "adminSearchUsers": "Search users",
+  "roleUser": "User",
+  "roleVolunteer": "Volunteer",
+  "roleAdmin": "Admin",
+  "adminReportsTitle": "Reports",
+  "adminReportsSubtitle": "Last 7 days",
+  "adminReportTotal": "Alerts",
+  "adminReportResolved": "Resolved",
+  "adminReportCancelled": "Cancelled",
+  "adminReportReassignment": "Needed reassignment",
+  "adminReportAvgAccept": "Avg. time to accept",
+  "adminReportAvgResolve": "Avg. time to resolve",
+  "adminReportPerDay": "Alerts per day",
+  "adminReportNoData": "No alerts in this period.",
+  "adminMinutes": "{count} min",
+  "@adminMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminSettingsTitle": "Settings",
+  "adminMoreTitle": "More",
+  "notificationsTitle": "Notifications",
+  "notificationsEmptyTitle": "No notifications yet",
+  "notificationsEmptyMessage": "Updates about emergencies and your account will appear here.",
+  "notificationsMarkAllRead": "Mark all read",
+  "notificationsUnread": "Unread",
+  "notificationsBellLabel": "Notifications, {count} unread",
+  "@notificationsBellLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notificationsBadgeMax": "99+",
+  "adminNoticeTitle": "Send notice to volunteers",
+  "adminNoticeSubtitle": "Reaches every verified volunteer",
+  "adminNoticeLabel": "Message",
+  "adminNoticeHint": "e.g. Ghat 4 is closed; use the north entrance.",
+  "adminNoticeSend": "Send notice",
+  "adminNoticeSent": "Notice sent to {count} volunteers.",
+  "@adminNoticeSent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "symptomsFirstAidTitle": "First aid you can give now",
+  "exitConfirmTitle": "Leave MedAID?",
+  "exitConfirmMessage": "You can reopen the app any time. Your alerts stay active.",
+  "exitConfirmAction": "Leave",
+  "adminDocumentZoomHint": "Pinch to zoom, drag to move",
+  "adminDocumentLoadFailed": "The document could not be loaded. The link expires after a few minutes — go back and open it again.",
+  "adminDocumentPdfNotice": "This is a PDF. The app cannot display PDF pages yet.",
+  "adminDocumentOpenExternally": "Open outside the app",
+  "adminDocumentUnavailableTitle": "Nothing to show",
+  "adminDocumentUnavailableMessage": "Open a document from the volunteer's documents list.",
+  "volunteerAlertNotificationTitle": "New emergency near you",
+  "volunteerAlertNotificationBody": "Open MedAID and respond within 2 minutes."
+}

@@ -1,0 +1,27 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/*
+!.vscode/extensions.json
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/coverage/
+backend/logs/
+backend/*.log
+backend/secrets/
+
+# Frontend (see frontend/.gitignore for Flutter specifics)
+frontend/l10n_untranslated.json
+# Local build config (server address, Firebase ids). Copy from dart_defines.example.json.
+frontend/dart_defines.json
+frontend/android/app/google-services.json
+frontend/ios/Runner/GoogleService-Info.plist
+
+# Never commit credentials
+*.pem
+*service-account*.json

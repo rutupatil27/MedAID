@@ -1,0 +1,81 @@
+# Render blueprint for the MedAID API. See DEPLOYMENT.md for the walkthrough.
+#
+# Values marked `sync: false` are never stored in this file — Render asks for
+# them when the blueprint is applied, and they stay in the dashboard.
+services:
+  - type: web
+    name: medaid-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm ci
+    startCommand: npm start
+    # Render restarts the service if this stops answering.
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: info
+
+      # Render terminates TLS at a proxy. Without this, express-rate-limit sees
+      # the proxy's IP for every request and one person hitting the auth limit
+      # locks out everyone.
+      - key: TRUST_PROXY
+        value: 1
+
+      # Mobile clients send no Origin header, so this only matters for browsers.
+      - key: CORS_ORIGINS
+        value: ''
+
+      # MongoDB Atlas. Must include the database name (…mongodb.net/medaid?…)
+      # and Atlas network access must allow 0.0.0.0/0 — free Render instances
+      # have no fixed outbound IP.
+      - key: MONGODB_URI
+        sync: false
+
+      # A fresh secret per environment; never the one from your laptop.
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_ACCESS_EXPIRES_IN
+        value: 15m
+      - key: REFRESH_TOKEN_TTL_DAYS
+        value: 7
+      - key: BCRYPT_SALT_ROUNDS
+        value: 12
+
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 900000
+      - key: RATE_LIMIT_MAX
+        value: 600
+      - key: AUTH_RATE_LIMIT_MAX
+        value: 30
+
+      # Volunteer documents. Leave blank and document upload is disabled.
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLOUDINARY_FOLDER
+        value: medaid/volunteer-documents
+
+      # Walking routes and ETAs. Blank falls back to straight-line estimates.
+      - key: ORS_API_KEY
+        sync: false
+
+      - key: OSM_HOSPITAL_SYNC
+        value: true
+
+      # Push. Upload the Firebase service-account JSON as a Render *Secret
+      # File* named fcm.json, then this path resolves. Blank disables push.
+      - key: FCM_SERVICE_ACCOUNT_PATH
+        value: /etc/secrets/fcm.json
+
+      # The assignment scan and retry jobs run in this process. They stop while
+      # a free instance is spun down — see DEPLOYMENT.md.
+      - key: JOBS_ENABLED
+        value: true

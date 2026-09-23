@@ -1,0 +1,29 @@
+include: package:flutter_lints/flutter.yaml
+
+# Same line width as the backend Prettier config (D-024).
+formatter:
+  page_width: 100
+
+analyzer:
+  exclude:
+    - lib/app/localization/generated/**
+  language:
+    strict-casts: true
+    strict-raw-types: true
+  errors:
+    missing_required_param: error
+    missing_return: error
+
+linter:
+  rules:
+    always_declare_return_types: true
+    avoid_print: true
+    avoid_dynamic_calls: true
+    directives_ordering: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_fields: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    unawaited_futures: true
+    use_build_context_synchronously: true

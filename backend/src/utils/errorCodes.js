@@ -1,0 +1,25 @@
+/**
+ * Language-neutral error codes (doc 23) with their default HTTP status.
+ * Flutter maps codes to localized messages, so never rename an existing code.
+ */
+const ERROR_CODES = Object.freeze({
+  AUTH_INVALID: 401,
+  AUTH_UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  ACCOUNT_SUSPENDED: 403,
+  PASSWORD_CHANGE_REQUIRED: 403,
+  VALIDATION_ERROR: 400,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  RATE_LIMITED: 429,
+  VOLUNTEER_NOT_VERIFIED: 403,
+  VOLUNTEER_NOT_AVAILABLE: 409,
+  EMERGENCY_ALREADY_ASSIGNED: 409,
+  ASSIGNMENT_EXPIRED: 410,
+  LOCATION_UNAVAILABLE: 422,
+  ROUTING_UNAVAILABLE: 503,
+  FILE_UPLOAD_FAILED: 422,
+  INTERNAL_ERROR: 500,
+});
+
+module.exports = { ERROR_CODES };

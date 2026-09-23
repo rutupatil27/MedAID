@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy to dart_defines.json and fill in. Local run: flutter run --dart-define-from-file=dart_defines.json. Release: flutter build apk --release --dart-define-from-file=dart_defines.json",
+
+  "_comment_api": "LEAVE EMPTY while developing. Empty means a debug build uses AppConfig.devApiBaseUrl (your laptop's Wi-Fi address). Set it only once you have deployed, to your real server, e.g. https://your-service.onrender.com/api/v1 — a release build refuses to start without it. Never leave a made-up URL here: the app will hang waiting for a server that does not exist.",
+  "API_BASE_URL": "",
+
+  "_comment_push": "Leave ENABLE_PUSH false and the app uses in-app notifications only. The Firebase values below are identifiers, not secrets: they ship inside every Firebase app. The service-account key is the secret, and it stays on the backend.",
+  "ENABLE_PUSH": false,
+  "FIREBASE_API_KEY": "",
+  "FIREBASE_PROJECT_ID": "",
+  "FIREBASE_MESSAGING_SENDER_ID": "",
+  "FIREBASE_ANDROID_APP_ID": "",
+  "FIREBASE_IOS_APP_ID": ""
+}

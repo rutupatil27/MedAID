@@ -1,0 +1,4 @@
+node_modules
+coverage
+# Multilingual content tables stay one entry per line for reviewers.
+src/services/symptom/symptomCatalog.js
