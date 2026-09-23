@@ -46,6 +46,18 @@ services:
       - key: BCRYPT_SALT_ROUNDS
         value: 12
 
+      # Used only by `npm run seed:admin`, which creates the first admin —
+      # there is no other way to get one. The password must be 12+ characters,
+      # and should be changed after the first login.
+      - key: ADMIN_SEED_NAME
+        value: MedAID Admin
+      - key: ADMIN_SEED_EMAIL
+        sync: false
+      - key: ADMIN_SEED_USERNAME
+        sync: false
+      - key: ADMIN_SEED_PASSWORD
+        sync: false
+
       - key: RATE_LIMIT_WINDOW_MS
         value: 900000
       - key: RATE_LIMIT_MAX
