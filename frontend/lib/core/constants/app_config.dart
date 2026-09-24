@@ -26,7 +26,15 @@ abstract final class AppConfig {
   /// `flutter build apk --dart-define=API_BASE_URL=https://api.example.org/api/v1`.
   static String get apiBaseUrl {
     if (_apiBaseUrl.isNotEmpty) return _apiBaseUrl;
-    assert(kDebugMode, 'Release builds need --dart-define=API_BASE_URL');
+    // Not an assert: Dart strips those from release and profile builds, so a
+    // shipped APK would quietly fall back to whatever LAN address a developer
+    // last used and fail with an unexplained network error. Better to say so.
+    if (!kDebugMode) {
+      throw StateError(
+        'No API_BASE_URL. Build with --dart-define-from-file=dart_defines.json, '
+        'and give it the full base including /api/v1.',
+      );
+    }
     return devApiBaseUrl;
   }
 

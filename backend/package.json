@@ -20,7 +20,8 @@
     "format:check": "prettier --check .",
     "seed:admin": "node scripts/seed-admin.js",
     "seed:demo": "node scripts/seed-demo.js",
-    "push:test": "node scripts/send-test-push.js"
+    "push:test": "node scripts/send-test-push.js",
+    "admin:reset-password": "node scripts/reset-admin-password.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
