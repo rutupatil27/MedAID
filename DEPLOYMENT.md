@@ -194,10 +194,10 @@ and the Firebase key is a *secret file* — a multi-line JSON document that env 
 `FCM_SERVICE_ACCOUNT_PATH` is fixed in [`render.yaml`](render.yaml), so there is nothing to prompt
 for; the file is uploaded by hand once the service exists.
 
-**Service → Settings → Secret Files → Add Secret File**, filename `fcm.json`, contents pasted
+**Service → Environment → Secret Files → Add Secret File**, filename `fcm.json`, contents pasted
 from the downloaded JSON. It is mounted at `/etc/secrets/fcm.json`, where the blueprint already
-points. (Render has moved this between **Settings** and a top-level **Environment** tab across UI
-versions — if one has no Secret Files section, look in the other.)
+points. **Environment** sits under *Manage* in the service sidebar, below *Compute* — not under
+*Settings*.
 
 Deploying before uploading it is safe: push failures are caught and logged
 (`notification.service.js`), so the API keeps working and only push is missing.
