@@ -207,7 +207,8 @@ conditions), an authorization matrix over every endpoint, and the security check
 - **[DECISIONS.md](DECISIONS.md)** — every decision and its reasoning.
 - **[DEVELOPMENT_STATUS.md](DEVELOPMENT_STATUS.md)** — what exists today, phase by phase.
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** — putting the backend on Render, setting up Firebase
-  Cloud Messaging, and building an APK to share.
+  Cloud Messaging, and building an APK to share (`node tools/build-apk.js`, then
+  `node tools/verify-apk.js` — never `--dart-define-from-file`, which silently drops every value).
 
 ## Before this is used for real
 

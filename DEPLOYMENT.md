@@ -240,8 +240,17 @@ address in and build:
 
 ```bash
 cd frontend
-flutter build apk --release --dart-define-from-file=dart_defines.json
+node tools/build-apk.js
+node tools/verify-apk.js
 ```
+
+**Do not use `flutter build apk --dart-define-from-file=...` directly.** On Flutter 3.44 it builds
+successfully and silently drops every define: `String.fromEnvironment` comes back empty, so the app
+installs, opens, and then fails on its first request with a generic error. The same file works for
+`flutter build bundle`, so the flag is accepted — it just never reaches the release AOT build.
+`tools/build-apk.js` reads the same JSON and expands it into explicit `--dart-define` flags, which
+do work, and `tools/verify-apk.js` reads the values back out of the compiled binary to prove it.
+Add `--split-per-abi` for ~20 MB per-architecture APKs instead of one 59 MB file.
 
 The APK lands in `build/app/outputs/flutter-apk/app-release.apk`. Share the file directly;
 testers need "install from unknown sources" enabled.
