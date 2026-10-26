@@ -39,8 +39,14 @@ abstract final class AppConfig {
   }
 
   static const Duration connectTimeout = Duration(seconds: 15);
-  static const Duration receiveTimeout = Duration(seconds: 25);
-  static const Duration sendTimeout = Duration(seconds: 60);
+
+  /// Generous on purpose. A backend on a free hosting tier is stopped while
+  /// nobody is using it and takes most of a minute to start again, and the TCP
+  /// connection is accepted immediately — so the wait lands here, not on
+  /// [connectTimeout]. At 25 s every first request of the day failed with a
+  /// bare "something went wrong" against a server that was merely waking.
+  static const Duration receiveTimeout = Duration(seconds: 70);
+  static const Duration sendTimeout = Duration(seconds: 70);
 
   /// Polling interval for live screens (P-09: push + polling, no WebSockets).
   static const Duration livePollInterval = Duration(seconds: 5);
